@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
-</RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/biaotilan"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="47dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shouye"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="29dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="47dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/fenlei"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="43dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/miaosha"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="48dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/gouwuche"
+            android:gravity="center" />
+
+        <RadioButton
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/wode"
+            android:gravity="center" />
+    </RadioGroup>
+</LinearLayout>
